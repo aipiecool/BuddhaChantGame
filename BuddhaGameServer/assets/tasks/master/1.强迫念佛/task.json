@@ -1,0 +1,23 @@
+{
+  "taskId": "主线1x0强迫念佛",
+  "taskName": "强迫念佛",
+  "childTask": [],
+  "condition": [
+    {
+      "triggerEvent": "CompleteTask",
+      "triggerObject": "主线0x0学习基本操作",
+      "triggerCount": 1
+    },
+    {
+      "triggerEvent": "UncompleteTask",
+      "triggerObject": "主线1x0强迫念佛",
+      "triggerCount": 1
+    }
+  ],
+  "getCondition": {
+    "triggerEvent": "AutoGet",
+    "triggerObject": "",
+    "triggerCount": 0
+  },
+  "completeChildTaskId": "主线0x0x2回复宁香彤"
+}

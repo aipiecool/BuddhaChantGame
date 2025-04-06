@@ -1,0 +1,36 @@
+{
+  "taskId": "主线1x0x0了解宝艺的烦恼",
+  "taskName": "了解宝艺的烦恼",
+  "taskTap": "",
+  "actions": [
+    {
+      "actionId": 1,
+      "triggerEvent": "SpeakWithNpc",
+      "triggerObject": "Baoyi",
+      "requireReplaceCount": 1
+    }
+  ],
+  "condition":[
+    {
+      "triggerEvent": "UncompleteChildTask",
+      "triggerObject": "主线1x0x0了解宝艺的烦恼",
+      "triggerCount": 1
+    }
+  ],
+  "unCompleteNpcSpeak": [
+
+  ],
+  "completeNpcSpeak": [
+    {
+      "npcName": "Baoyi",
+      "npcFirstSpeak": "念佛好处多。我想让阿吉也一起念佛，可是他说什么也不肯。这可如何是好?",
+      "npcSecondSpeak": ""
+    }
+  ],
+  "rewards": [
+    {
+      "rewardType":"Exp",
+      "rewardCount": 100
+    }
+  ]
+}

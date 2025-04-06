@@ -1,0 +1,40 @@
+{
+  "taskId": "支线0x0x0时刻念佛",
+  "taskName": "时刻念佛",
+  "taskTap": "",
+  "actions": [
+    {
+      "actionId": 0,
+      "triggerEvent": "ChantOrWrite",
+      "triggerObject": "amtf",
+      "requireReplaceCount": 10
+    }
+  ],
+  "condition":[
+    {
+      "triggerEvent": "SpeakWithNpc",
+      "triggerObject": "ARongGrandma",
+      "triggerCount": 0
+    }
+  ],
+  "unCompleteNpcSpeak": [
+    {
+      "npcName": "ARongGrandma",
+      "npcFirstSpeak": "善导大师说：”上来虽说定散两门之益，望佛本愿，意在众生一向专称弥陀佛名。“^来，和奶奶一起念佛吧！",
+      "npcSecondSpeak": "南无阿弥陀佛, 南无阿弥陀佛, 南无阿弥陀佛……"
+    }
+  ],
+  "completeNpcSpeak": [
+    {
+      "npcName": "ARongGrandma",
+      "npcFirstSpeak": "只要能一向专念，无穷的玄妙理论，自然包含其中，浅通佛智，暗合道妙。",
+      "npcSecondSpeak": "南无阿弥陀佛, 南无阿弥陀佛, 南无阿弥陀佛……"
+    }
+  ],
+  "rewards": [
+    {
+      "rewardType":"Exp",
+      "rewardCount": 100
+    }
+  ]
+}

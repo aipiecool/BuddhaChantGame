@@ -1,0 +1,18 @@
+{
+  "taskId": "支线0x0每日念佛",
+  "taskName": "每日念佛",
+  "childTask": [],
+  "condition": [
+    {
+      "triggerEvent": "CompleteTask",
+      "triggerObject": "主线0x0学习基本操作",
+      "triggerCount": 1
+    }
+  ],
+  "getCondition": {
+    "triggerEvent": "SpeakWithNpc",
+    "triggerObject": "ARongGrandma",
+    "triggerCount": 0
+  },
+  "completeChildTaskId": "支线0x0x0每日念佛"
+}

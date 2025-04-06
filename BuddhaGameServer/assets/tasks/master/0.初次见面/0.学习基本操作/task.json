@@ -1,0 +1,18 @@
+{
+  "taskId": "主线0x0学习基本操作",
+  "taskName": "学习基本操作",
+  "childTask": [],
+  "condition": [
+    {
+      "triggerEvent": "UncompleteTask",
+      "triggerObject": "主线0x0学习基本操作",
+      "triggerCount": 1
+    }
+  ],
+  "getCondition": {
+    "triggerEvent": "AutoGet",
+    "triggerObject": "",
+    "triggerCount": 0
+  },
+  "completeChildTaskId": "主线0x0x2回复宁香彤"
+}

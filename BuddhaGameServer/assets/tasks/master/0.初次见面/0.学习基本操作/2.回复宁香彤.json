@@ -1,0 +1,41 @@
+{
+  "taskId": "主线0x0x2回复宁香彤",
+  "taskName": "回复宁香彤",
+  "taskTap": "",
+  "actions": [
+    {
+      "actionId": 0,
+      "triggerEvent": "SpeakWithNpc",
+      "triggerObject": "Ningxiangtong",
+      "requireReplaceCount": 1
+    }
+  ],
+  "condition":[
+    {
+      "triggerEvent": "CompleteChildTask",
+      "triggerObject": "主线0x0x1念诵佛号10遍",
+      "triggerCount": 1
+    },
+    {
+      "triggerEvent": "UncompleteChildTask",
+      "triggerObject": "主线0x0x2回复宁香彤",
+      "triggerCount": 1
+    }
+  ],
+  "unCompleteNpcSpeak": [
+
+  ],
+  "completeNpcSpeak": [
+    {
+      "npcName": "Ningxiangtong",
+      "npcFirstSpeak": "太棒了！使用起来是不是很简单？可别小看了这一句佛号，他的力量唯有佛能够知晓！^以后要常常念佛！",
+      "npcSecondSpeak": ""
+    }
+  ],
+  "rewards": [
+    {
+      "rewardType":"Exp",
+      "rewardCount": 100
+    }
+  ]
+}

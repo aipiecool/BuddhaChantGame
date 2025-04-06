@@ -1,0 +1,41 @@
+{
+  "taskId": "主线0x0x1念诵佛号10遍",
+  "taskName": "念诵佛号10遍",
+  "taskTap": "点击屏幕下方的按钮，当按钮变为彩色时，说明开启了语音识别功能。对着手机念诵佛号，系统会自动记录你念的佛号。",
+  "actions": [
+    {
+      "actionId": 0,
+      "triggerEvent": "ChantOrWrite",
+      "triggerObject": "amtf",
+      "requireReplaceCount": 10
+    }
+  ],
+  "condition":[
+    {
+      "triggerEvent": "CompleteChildTask",
+      "triggerObject": "主线0x0x0了解语音念佛",
+      "triggerCount": 1
+    },
+    {
+      "triggerEvent": "UncompleteChildTask",
+      "triggerObject": "主线0x0x1念诵佛号10遍",
+      "triggerCount": 1
+    }
+  ],
+  "unCompleteNpcSpeak": [
+
+  ],
+  "completeNpcSpeak": [
+    {
+      "npcName": "Ningxiangtong",
+      "npcFirstSpeak": "还不会使用语音识别系统吗？点开任务，里面有提示。^如果还不会操作，可以关注微信公众号。或者加入qq群731907539。大家都很热心为您解答呢!",
+      "npcSecondSpeak": "还不会使用语音识别系统吗？点开任务，里面有提示。^如果还不会操作，可以关注微信公众号。或者加入qq群731907539。大家都很热心为您解答呢!"
+    }
+  ],
+  "rewards": [
+    {
+      "rewardType":"Exp",
+      "rewardCount": 100
+    }
+  ]
+}

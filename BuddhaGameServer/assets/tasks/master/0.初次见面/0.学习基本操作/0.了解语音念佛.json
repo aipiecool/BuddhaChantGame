@@ -1,0 +1,36 @@
+{
+  "taskId": "主线0x0x0了解语音念佛",
+  "taskName": "了解语音念佛",
+  "taskTap": "通过左下角的虚拟手柄，移动到宁香彤的附近，然后点击与其对话按钮",
+  "actions": [
+    {
+      "actionId": 1,
+      "triggerEvent": "SpeakWithNpc",
+      "triggerObject": "Ningxiangtong",
+      "requireReplaceCount": 1
+    }
+  ],
+  "condition":[
+    {
+      "triggerEvent": "UncompleteChildTask",
+      "triggerObject": "主线0x0x0了解语音念佛",
+      "triggerCount": 1
+    }
+  ],
+  "unCompleteNpcSpeak": [
+
+  ],
+  "completeNpcSpeak": [
+    {
+      "npcName": "Ningxiangtong",
+      "npcFirstSpeak": "嗨，你是新来的吧。欢迎来到般若镇。这个游戏特别的地方就是很多任务需要通过念佛来完成。^你有没有注意到屏幕下方有个很大的按钮，点击它，然后试试念诵南无阿弥陀佛。游戏会通过语音识别系统自动记录你念佛号的次数^那，赶快来试试吧！",
+      "npcSecondSpeak": ""
+    }
+  ],
+  "rewards": [
+    {
+      "rewardType":"Exp",
+      "rewardCount": 100
+    }
+  ]
+}

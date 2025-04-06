@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "gson-2.8.6.jar",
+            "okhttp-3.2.0.jar",
+            "okio-1.14.0.jar"
+        ],
+        "exclude": [
+            "okhttp-3.6.0.jar"
+        ]
+    }
+}
